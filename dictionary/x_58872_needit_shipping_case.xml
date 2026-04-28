@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="2b95be2353140310340d1ab0a0490ec6" label="Shipping Case" max_length="40" name="x_58872_needit_shipping_case" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="inquiry" label="Category" max_length="40" name="u_category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Software" sequence="1" value="software"/>
+                <element inactive_on_update="false" label="Inquiry" sequence="0" value="inquiry"/>
+                <element inactive_on_update="false" label="Password Reset" sequence="5" value="password reset"/>
+                <element inactive_on_update="false" label="Database" sequence="3" value="database"/>
+                <element inactive_on_update="false" label="Network" sequence="4" value="network"/>
+                <element inactive_on_update="false" label="Hardware" sequence="2" value="hardware"/>
+            </choice>
+        </element>
+        <element label="Configuration Items" max_length="32" name="u_configuration_items" reference="cmdb_ci" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="new" label="State" max_length="40" name="u_state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="closed"/>
+                <element inactive_on_update="false" label="On Hold" sequence="2" value="on hold"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="5" value="cancelled"/>
+                <element inactive_on_update="false" label="Resolved" sequence="3" value="resolved"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Resolution Code" max_length="40" name="u_resolution_code" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Duplicate" sequence="0" value="duplicate"/>
+                <element inactive_on_update="false" label="Resolved by Caller" sequence="2" value="resolved by caller"/>
+                <element inactive_on_update="false" label="No Solution Provided" sequence="5" value="no solution provided"/>
+                <element inactive_on_update="false" label="Workaround Provided" sequence="7" value="workaround provided"/>
+                <element inactive_on_update="false" label="Resolved by Problem" sequence="3" value="resolved by problem"/>
+                <element inactive_on_update="false" label="Solution Provided" sequence="6" value="solution provided"/>
+                <element inactive_on_update="false" label="Known Error" sequence="1" value="known error"/>
+                <element inactive_on_update="false" label="Resolved by Request" sequence="4" value="resolved by request"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Resolved By" max_length="32" name="u_resolved_by" reference="sys_user" type="reference"/>
+        <element label="Caller" mandatory="true" max_length="32" name="u_caller" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="encode_utf8=false" label="Change Request" max_length="32" name="u_change_request" reference="sc_req_item" type="reference"/>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Work List" max_length="1024" name="u_work_list" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+            </choice>
+        </element>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Work Notes List" max_length="1024" name="u_work_notes_list" reference="sys_user" type="glide_list"/>
+        <element attributes="encode_utf8=false" label="Change Request By" max_length="32" name="u_change_request_by" reference="sc_req_item" type="reference"/>
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Knowledge" max_length="40" name="u_knowledge" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Resolution Notes" max_length="4000" name="u_resolution_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="low" label="Urgency" max_length="40" name="u_urgency" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="low"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1500" name="u_description" type="string"/>
+        <element attributes="encode_utf8=false" label="Assignment Group" max_length="32" name="u_assignment_group" reference="sys_user_group" type="reference"/>
+        <element attributes="encode_utf8=false" label="Problem" max_length="32" name="u_problem" reference="problem" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_category" dependent_on_field="u_category" label="Subcategory" max_length="40" name="u_subcategory" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="hardware" inactive_on_update="false" label="Disk" sequence="5" value="disk"/>
+                <element dependent_value="network" inactive_on_update="false" label="Wireless" sequence="13" value="wireless"/>
+                <element dependent_value="software" inactive_on_update="false" label="Internal Application" sequence="3" value="internal application"/>
+                <element dependent_value="network" inactive_on_update="false" label="IP address" sequence="11" value="ip address"/>
+                <element dependent_value="password reset" inactive_on_update="false" label="Operating System" sequence="1" value="operating system"/>
+                <element dependent_value="hardware" inactive_on_update="false" label="Wifi" sequence="9" value="wifi"/>
+                <element dependent_value="inquiry" inactive_on_update="false" label="Email" sequence="0" value="email"/>
+                <element dependent_value="hardware" inactive_on_update="false" label="Keyboard" sequence="7" value="keyboard"/>
+                <element dependent_value="database" inactive_on_update="false" label="MySQL" sequence="15" value="mysql"/>
+                <element dependent_value="hardware" inactive_on_update="false" label="Mouse" sequence="8" value="mouse"/>
+                <element dependent_value="database" inactive_on_update="false" label="Oracle" sequence="16" value="oracle"/>
+                <element dependent_value="hardware" inactive_on_update="false" label="Monitor" sequence="6" value="monitor"/>
+                <element dependent_value="database" inactive_on_update="false" label="DB2" sequence="14" value="db2"/>
+                <element dependent_value="software" inactive_on_update="false" label="CPU" sequence="4" value="cpu"/>
+                <element dependent_value="network" inactive_on_update="false" label="VPN" sequence="12" value="vpn"/>
+                <element dependent_value="software" inactive_on_update="false" label="Antivirus" sequence="2" value="antivirus"/>
+                <element dependent_value="network" inactive_on_update="false" label="DHCP" sequence="10" value="dhcp"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Assign To" max_length="32" name="u_assign_to" reference="sys_user" reference_qual="roles=ITIL^EQ" reference_qual_condition="roles=ITIL^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="500" name="u_short_description" type="string"/>
+        <element attributes="encode_utf8=false" label="Incident" max_length="32" name="u_incident" reference="incident" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="contact_type" choice_table="incident" label="Contact Type" max_length="40" name="u_contact_type" type="string">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Resolved" max_length="40" name="u_resolved" type="glide_date_time"/>
+        <element label="Knowledge" max_length="40" name="u_knowledge_section" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="low" label="Impact" max_length="40" name="u_impact" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="2" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" max_length="40" name="u_priority" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Low" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Planning" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Moderate" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_assign_to"/>
+        </index>
+        <index name="index2">
+            <element name="u_assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="u_caller"/>
+        </index>
+        <index name="index4">
+            <element name="u_change_request"/>
+        </index>
+        <index name="index5">
+            <element name="u_change_request_by"/>
+        </index>
+        <index name="index6">
+            <element name="u_configuration_items"/>
+        </index>
+        <index name="index7">
+            <element name="u_incident"/>
+        </index>
+        <index name="index8">
+            <element name="u_problem"/>
+        </index>
+        <index name="index9">
+            <element name="u_resolved_by"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="65a676b053600310340d1ab0a0490ed7" sys_domain="global" table="x_58872_needit_shipping_case" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_short_description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-27 06:57:10</sys_created_on>
+            <sys_id>f9a6b6b053600310340d1ab0a0490e3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_58872_needit_shipping_case" sys_domain="global" view="Default view">65a676b053600310340d1ab0a0490ed7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-27 06:57:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_description</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-27 06:57:10</sys_created_on>
+            <sys_id>b5a6b6b053600310340d1ab0a0490e3c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_58872_needit_shipping_case" sys_domain="global" view="Default view">65a676b053600310340d1ab0a0490ed7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-27 06:57:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_58872_needit_shipping_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-27 06:57:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>65a676b053600310340d1ab0a0490ed7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_58872_needit_shipping_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+            <sys_update_name>sys_ui_section_65a676b053600310340d1ab0a0490ed7</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-27 06:57:09</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>f1661c7adbd2f1544162684e139619d0</instance_id>
+        <instance_name>dev207516</instance_name>
+        <name>sys_ui_section_65a676b053600310340d1ab0a0490ed7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="65a676b053600310340d1ab0a0490ed7" sys_domain="global" table="x_58872_needit_shipping_case" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_short_description</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-27 06:57:10</sys_created_on><sys_id>f9a6b6b053600310340d1ab0a0490e3b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_58872_needit_shipping_case" sys_domain="global" view="Default view">65a676b053600310340d1ab0a0490ed7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-27 06:57:10</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_description</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-27 06:57:10</sys_created_on><sys_id>b5a6b6b053600310340d1ab0a0490e3c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_58872_needit_shipping_case" sys_domain="global" view="Default view">65a676b053600310340d1ab0a0490ed7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-27 06:57:10</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_58872_needit_shipping_case</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-27 06:57:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>65a676b053600310340d1ab0a0490ed7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_58872_needit_shipping_case</sys_name><sys_overrides/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ui_section_65a676b053600310340d1ab0a0490ed7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-27 06:57:09</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>103421991</payload_hash>
+        <record_name>Shipping Case</record_name>
+        <reverted_from/>
+        <source>c9515747534cc710340d1ab0a0490e96</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 06:57:10</sys_created_on>
+        <sys_id>3da6b6b053600310340d1ab0a0490e3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dcdba47300000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 06:57:10</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>fda6b6b064600310b88ec818bc6c073e</update_guid>
+        <update_guid_history>fda6b6b064600310b88ec818bc6c073e:103421991</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 07:00:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>32db0bb27c69402a96ca0ec2265fd869</sys_id>
+        <sys_metadata>65a676b053600310340d1ab0a0490ed7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Shipping Case">2b95be2353140310340d1ab0a0490ec6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ui_section_65a676b053600310340d1ab0a0490ed7</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_65a676b053600310340d1ab0a0490ed7">3da6b6b053600310340d1ab0a0490e3f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 07:00:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
