@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="081da1f55330c310340d1ab0a0490ec7" extends="dl_matcher" label="Shipping Case Priority Rule" max_length="40" name="x_58872_needit_shipping_case_priority_rule" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="u_urgency" choice_table="x_58872_needit_shipping_case" label="Urgency" max_length="40" name="u_urgency" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="u_impact" choice_table="x_58872_needit_shipping_case" label="Impact" max_length="40" name="u_impact" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="u_priority" choice_table="x_58872_needit_shipping_case" label="Priority" max_length="40" name="u_priority" type="string">
+            <choice/>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6a98a0a0533c8f10340d1ab0a0490e53" extends="task" label="Shipping Table Task" max_length="40" name="x_58872_needit_shipping_table_task" type="collection">
+        <element attributes="encode_utf8=false" label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element attributes="encode_utf8=false" label="Caller" max_length="32" name="caller" reference="sys_user" type="reference"/>
+    </element>
+</database>
